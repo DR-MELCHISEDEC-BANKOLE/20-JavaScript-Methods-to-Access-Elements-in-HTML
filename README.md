@@ -1,4 +1,4 @@
-# 20-JavaScript-Methods-to-Access-Elements-in-HTML
+# 20-JavaScript-Methods-to-Access-Elements-in-HTML (Beginners)
 
 JavaScript provides various methods to access elements in HTML. 
 Here are 20 commonly used methods along with explanations of when to use each with example code:
