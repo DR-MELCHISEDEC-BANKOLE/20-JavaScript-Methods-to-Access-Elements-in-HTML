@@ -156,9 +156,9 @@ Here are 20 commonly used methods along with explanations of when to use each wi
   &lt;title&gt;document.links Example&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;a href="https://www.example.com"&gt;Link 1&lt;/a&gt;
-  &lt;a href="https://www.example.com/page"&gt;Link 2&lt;/a&gt;
-  &lt;a href="https://www.example.com/another"&gt;Link 3&lt;/a&gt;
+  &lt;a href="https://www.example.com"&gt;Link 1&lt;/a &gt;
+  &lt;a href="https://www.example.com/page"&gt;Link 2&lt;/a &gt;
+  &lt;a href="https://www.example.com/another"&gt;Link 3&lt;/a &gt;
   &lt;script&gt;
     const firstLink = document.links[0];
     console.log(firstLink.href);
