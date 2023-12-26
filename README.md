@@ -151,17 +151,23 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 
 * methods like document.getElementsByClassNameNS(), Element.closest(), and Element.querySelectorAll(), which are indeed useful but might not be as commonly used or familiar to beginners as the main list.'
 
+---
+
 Here's a bit more detail on the less commonly known methods mentioned in the "Extra" section:
 
-document.getElementsByClassNameNS(namespace, className)
-This method is similar to getElementsByClassName, but it allows you to specify a namespace for the class name. Namespaces are primarily used in XML documents. For instance, in SVG documents, elements might have classes within specific namespaces. However, in standard HTML, namespaces are rarely used. An example might look like this:
+### `document.getElementsByClassNameNS(namespace, className)`
 
-javascript
+This method is similar to `getElementsByClassName`, but it allows you to specify a namespace for the class name. Namespaces are primarily used in XML documents. For instance, in SVG documents, elements might have classes within specific namespaces. However, in standard HTML, namespaces are rarely used. An example might look like this:
+
+```javascript
 const svgElements = document.getElementsByClassNameNS("http://www.w3.org/2000/svg", "svgClass");
-Element.closest(selector)
+```
+
+### `Element.closest(selector)`
+
 This method helps you find the closest ancestor of an element that matches a given CSS selector. It's particularly useful when you want to find a specific parent element without knowing its exact structure in the DOM. For instance:
 
-html
+```html
 <div class="grandparent">
   <div class="parent">
     <div class="child">
@@ -169,24 +175,34 @@ html
     </div>
   </div>
 </div>
-javascript
+```
+
+```javascript
 const button = document.getElementById('myButton');
 const parentDiv = button.closest('.parent');
-Element.querySelectorAll(selectors)
-While similar to document.querySelectorAll, this method operates on a specific element's descendants, not the entire document. It retrieves all elements that match the specified CSS selectors within the context of that element. For example:
+```
 
-html
+### `Element.querySelectorAll(selectors)`
+
+While similar to `document.querySelectorAll`, this method operates on a specific element's descendants, not the entire document. It retrieves all elements that match the specified CSS selectors within the context of that element. For example:
+
+```html
 <ul id="myList">
   <li class="item">Item 1</li>
   <li class="item">Item 2</li>
   <li class="item">Item 3</li>
 </ul>
-javascript
+```
+
+```javascript
 const myList = document.getElementById('myList');
 const items = myList.querySelectorAll('.item');
+```
+
 These methods expand the capabilities of element selection and manipulation, but their usage might be more situational or related to specific document structures beyond the basics covered by the main list.
+
+---
 
 Remember, the chosen method depends on the specific element you want to access and the nature of your interaction with it. Choosing the right method can make your code more efficient and easier to maintain. Each method has its specific use case based on the requirement to access, manipulate, or interact with different elements in the HTML document.
 
-I hope this provides a complete picture of various methods for accessing elements in HTML with JavaScript. Feel free to ask if you have any further questions or need examples of specific methods in action!
-
+If you have any further questions or need examples of specific methods in action, feel free to ask!
