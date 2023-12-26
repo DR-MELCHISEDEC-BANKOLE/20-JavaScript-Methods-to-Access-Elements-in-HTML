@@ -24,8 +24,6 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 &lt;/html&gt;</pre></code>
 
 
-
-
 **2. `getElementsByTagName()`:**
 
 - **Returns a collection of elements with a specified tag name.**
