@@ -30,23 +30,22 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to access multiple elements of the same type.**
 - **Example:** `const allParagraphs = document.getElementsByTagName("p");`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>getElementsByTagName Example</title>
-</head>
-<body>
-  <p>First Paragraph</p>
-  <p>Second Paragraph</p>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;getElementsByTagName Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;First Paragraph&lt;/p&gt;
+  &lt;p&gt;Second Paragraph&lt;/p&gt;
+  &lt;script&gt;
     const allParagraphs = document.getElementsByTagName("p");
     for (const paragraph of allParagraphs) {
       console.log(paragraph.textContent);
     }
-  </script>
-</body>
-</html>
-
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **3. `getElementsByClassName()`:**
@@ -56,22 +55,22 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Example:** `const highlightedElements = document.getElementsByClassName("highlight");`
 - 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>getElementsByClassName Example</title>
-</head>
-<body>
-  <p class="highlight">Highlighted Paragraph 1</p>
-  <p class="highlight">Highlighted Paragraph 2</p>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;getElementsByClassName Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p class="highlight"&gt;Highlighted Paragraph 1&lt;/p&gt;
+  &lt;p class="highlight"&gt;Highlighted Paragraph 2&lt;/p&gt;
+  &lt;script&gt;
     const highlightedElements = document.getElementsByClassName("highlight");
     for (const element of highlightedElements) {
       console.log(element.textContent);
     }
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **4. `querySelector()`:**
@@ -80,19 +79,19 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it for more complex element selections using CSS syntax.**
 - **Example:** `const firstH2 = document.querySelector("h2");`
  
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>querySelector Example</title>
-</head>
-<body>
-  <h2>This is an H2 element</h2>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;querySelector Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h2&gt;This is an H2 element&lt;/h2&gt;
+  &lt;script&gt;
     const firstH2 = document.querySelector("h2");
     console.log(firstH2.textContent);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **5. `querySelectorAll()`:**
@@ -101,23 +100,23 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to access multiple elements matching a CSS pattern.**
 - **Example:** `const allLinks = document.querySelectorAll("a");`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>querySelectorAll Example</title>
-</head>
-<body>
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;querySelectorAll Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;a href="#"&gt;Link 1&lt;/a&gt;
+  &lt;a href="#"&gt;Link 2&lt;/a&gt;
+  &lt;a href="#"&gt;Link 3&lt;/a&gt;
+  &lt;script&gt;
     const allLinks = document.querySelectorAll("a");
     for (const link of allLinks) {
       console.log(link.textContent);
     }
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **6. `document.forms[]`:**
@@ -126,23 +125,23 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to interact with forms and their elements.**
 - **Example:** `const myForm = document.forms["myForm"];`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>document.forms Example</title>
-</head>
-<body>
-  <form name="myForm">
-    <input type="text" name="username">
-    <input type="password" name="password">
-    <button type="submit">Submit</button>
-  </form>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;document.forms Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form name="myForm"&gt;
+    &lt;input type="text" name="username"&gt;
+    &lt;input type="password" name="password"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;script&gt;
     const myForm = document.forms["myForm"];
     console.log(myForm.elements);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **7. `document.links[]`:**
@@ -151,21 +150,21 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to manipulate links on the page.**
 - **Example:** `const firstLink = document.links[0];`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>document.links Example</title>
-</head>
-<body>
-  <a href="https://www.example.com">Link 1</a>
-  <a href="https://www.example.com/page">Link 2</a>
-  <a href="https://www.example.com/another">Link 3</a>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;document.links Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;a href="https://www.example.com"&gt;Link 1&lt;/a&gt;
+  &lt;a href="https://www.example.com/page"&gt;Link 2&lt;/a&gt;
+  &lt;a href="https://www.example.com/another"&gt;Link 3&lt;/a&gt;
+  &lt;script&gt;
     const firstLink = document.links[0];
     console.log(firstLink.href);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **8. `document.images[]`:**
@@ -174,21 +173,21 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to work with images on the page.**
 - **Example:** `const secondImage = document.images[1];`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>document.images Example</title>
-</head>
-<body>
-  <img src="image1.jpg" alt="Image 1">
-  <img src="image2.jpg" alt="Image 2">
-  <img src="image3.jpg" alt="Image 3">
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;document.images Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;img src="image1.jpg" alt="Image 1"&gt;
+  &lt;img src="image2.jpg" alt="Image 2"&gt;
+  &lt;img src="image3.jpg" alt="Image 3"&gt;
+  &lt;script&gt;
     const secondImage = document.images[1];
     console.log(secondImage.src);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **9. `document.anchors[]`:**
@@ -197,21 +196,21 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to access anchors specifically.**
 - **Example:** `const lastAnchor = document.anchors[document.anchors.length - 1];`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>document.anchors Example</title>
-</head>
-<body>
-  <a name="anchor1">Anchor 1</a>
-  <a name="anchor2">Anchor 2</a>
-  <a name="anchor3">Anchor 3</a>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;document.anchors Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;a name="anchor1"&gt;Anchor 1&lt;/a&gt;
+  &lt;a name="anchor2"&gt;Anchor 2&lt;/a&gt;
+  &lt;a name="anchor3"&gt;Anchor 3&lt;/a&gt;
+  &lt;script&gt;
     const lastAnchor = document.anchors[document.anchors.length - 1];
     console.log(lastAnchor.name);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **10. `parentNode`:**
@@ -248,23 +247,23 @@ console.log(children);
 - **Use it to get the first child directly.**
 - **Example:** `const firstChild = element.firstChild;`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>firstChild Example</title>
-</head>
-<body>
-  <div id="parentElement">
-    <p>First Paragraph</p>
-    <p>Second Paragraph</p>
-  </div>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;firstChild Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="parentElement"&gt;
+    &lt;p&gt;First Paragraph&lt;/p&gt;
+    &lt;p&gt;Second Paragraph&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
     const parentElement = document.getElementById("parentElement");
     const firstChild = parentElement.firstChild;
     console.log(firstChild.textContent);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **13. `lastChild`:**
@@ -273,23 +272,23 @@ console.log(children);
 - **Use it to get the last child directly.**
 - **Example:** `const lastChild = element.lastChild;`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>lastChild Example</title>
-</head>
-<body>
-  <div id="parentElement">
-    <p>First Paragraph</p>
-    <p>Second Paragraph</p>
-  </div>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;lastChild Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="parentElement"&gt;
+    &lt;p&gt;First Paragraph&lt;/p&gt;
+    &lt;p&gt;Second Paragraph&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
     const parentElement = document.getElementById("parentElement");
     const lastChild = parentElement.lastChild;
     console.log(lastChild.textContent);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **14. `nextSibling`:**
@@ -324,24 +323,24 @@ console.log(previousSibling);
 - **Use it to specifically access sibling elements.**
 - **Example:** `const nextElementSibling = element.nextElementSibling;`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>nextElementSibling Example</title>
-</head>
-<body>
-  <div>
-    <p>First Paragraph</p>
-    <span id="currentElement">Current Element</span>
-    <p>Next Paragraph</p>
-  </div>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;nextElementSibling Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;p&gt;First Paragraph&lt;/p&gt;
+    &lt;span id="currentElement"&gt;Current Element&lt;/span&gt;
+    &lt;p&gt;Next Paragraph&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
     const currentElement = document.getElementById("currentElement");
     const nextElementSibling = currentElement.nextElementSibling;
     console.log(nextElementSibling.textContent);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **17. `previousElementSibling`:**
@@ -350,25 +349,24 @@ console.log(previousSibling);
 - **Use it to specifically access sibling elements in the opposite direction.**
 - **Example:** `const previousElementSibling = element.previous
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>previousElementSibling Example</title>
-</head>
-<body>
-  <div>
-    <p>Previous Paragraph</p>
-    <span id="currentElement">Current Element</span>
-    <p>Last Paragraph</p>
-  </div>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;previousElementSibling Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;p&gt;Previous Paragraph&lt;/p&gt;
+    &lt;span id="currentElement"&gt;Current Element&lt;/span&gt;
+    &lt;p&gt;Last Paragraph&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
     const currentElement = document.getElementById("currentElement");
     const previousElementSibling = currentElement.previousElementSibling;
     console.log(previousElementSibling.textContent);
-  </script>
-</body>
-</html>
-
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **18. `document.documentElement`:**
@@ -377,18 +375,18 @@ console.log(previousSibling);
 - **Use it to get the overall document or its properties.**
 - **Example:** `const docElement = document.documentElement;`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>document.documentElement Example</title>
-</head>
-<body>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;document.documentElement Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script&gt;
     const docElement = document.documentElement;
     console.log(docElement.nodeName);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **19. `document.head`:**
@@ -397,18 +395,18 @@ console.log(previousSibling);
 - **Use it to manipulate elements within the head, like scripts and styles.**
 - **Example:** `const headElement = document.head;`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>document.head Example</title>
-</head>
-<body>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;document.head Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script&gt;
     const headElement = document.head;
     console.log(headElement.nodeName);
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 
 **20. `document.body`:**
@@ -417,19 +415,18 @@ console.log(previousSibling);
 - **Use it to interact with and modify the main content of the page.**
 - **Example:** `const bodyElement = document.body;`
 
-- <!DOCTYPE html>
-<html>
-<head>
-  <title>document.body Example</title>
-</head>
-<body>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;document.body Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script&gt;
     const bodyElement = document.body;
     console.log(bodyElement.nodeName);
-  </script>
-</body>
-</html>
-
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
 
 **Extra:**
 
