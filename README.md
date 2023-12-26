@@ -9,7 +9,8 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it when you need to access a unique element on the page.**
 - **Example:** `const myElement = document.getElementById("myId");`
 
-- <!DOCTYPE html>
+<pre><code>
+<!DOCTYPE html>
 <html>
 <head>
   <title>getElementById Example</title>
@@ -22,6 +23,7 @@ Here are 20 commonly used methods along with explanations of when to use each wi
   </script>
 </body>
 </html>
+</code></pre>
 
 
 
