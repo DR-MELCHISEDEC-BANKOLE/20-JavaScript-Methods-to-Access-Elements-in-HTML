@@ -3,7 +3,7 @@
 JavaScript provides various methods to access elements in HTML. 
 Here are 20 commonly used methods along with explanations of when to use each with example code:
 
-**1. `getElementById()`:**
+###**1. `getElementById()`:**
 
 - **Retrieves a single element with a specific ID.**
 - **Use it when you need to access a unique element on the page.**
