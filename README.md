@@ -9,21 +9,20 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it when you need to access a unique element on the page.**
 - **Example:** `const myElement = document.getElementById("myId");`
 
-<pre><code>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>getElementById Example</title>
-</head>
-<body>
-  <div id="myId">This is a div with ID "myId"</div>
-  <script>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;getElementById Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="myId"&gt;This is a div with ID "myId"&lt;/div&gt;
+  &lt;script&gt;
     const myElement = document.getElementById("myId");
     console.log(myElement.textContent);
-  </script>
-</body>
-</html>
-</code></pre>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
+
 
 
 
