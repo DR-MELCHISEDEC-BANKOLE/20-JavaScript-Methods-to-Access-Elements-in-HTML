@@ -9,11 +9,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it when you need to access a unique element on the page.**
 - **Example:** `const myElement = document.getElementById("myId");`
 
+
 **2. `getElementsByTagName()`:**
 
 - **Returns a collection of elements with a specified tag name.**
 - **Use it to access multiple elements of the same type.**
 - **Example:** `const allParagraphs = document.getElementsByTagName("p");`
+
 
 **3. `getElementsByClassName()`:**
 
@@ -21,11 +23,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to access elements that share a common class.**
 - **Example:** `const highlightedElements = document.getElementsByClassName("highlight");`
 
+
 **4. `querySelector()`:**
 
 - **Selects the first element that matches a CSS selector.**
 - **Use it for more complex element selections using CSS syntax.**
 - **Example:** `const firstH2 = document.querySelector("h2");`
+
 
 **5. `querySelectorAll()`:**
 
@@ -33,11 +37,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to access multiple elements matching a CSS pattern.**
 - **Example:** `const allLinks = document.querySelectorAll("a");`
 
+
 **6. `document.forms[]`:**
 
 - **Accesses a form element by its name or index within the forms collection.**
 - **Use it to interact with forms and their elements.**
 - **Example:** `const myForm = document.forms["myForm"];`
+
 
 **7. `document.links[]`:**
 
@@ -45,11 +51,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to manipulate links on the page.**
 - **Example:** `const firstLink = document.links[0];`
 
+
 **8. `document.images[]`:**
 
 - **Accesses an image element by its index within the images collection.**
 - **Use it to work with images on the page.**
 - **Example:** `const secondImage = document.images[1];`
+
 
 **9. `document.anchors[]`:**
 
@@ -57,11 +65,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to access anchors specifically.**
 - **Example:** `const lastAnchor = document.anchors[document.anchors.length - 1];`
 
+
 **10. `parentNode`:**
 
 - **Accesses the parent node of an element.**
 - **Use it to navigate the DOM structure upwards.**
 - **Example:** `const parentElement = element.parentNode;`
+
 
 **11. `childNodes`:**
 
@@ -69,11 +79,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to access the children of an element.**
 - **Example:** `const children = element.childNodes;`
 
+
 **12. `firstChild`:**
 
 - **Accesses the first child node of an element.**
 - **Use it to get the first child directly.**
 - **Example:** `const firstChild = element.firstChild;`
+
 
 **13. `lastChild`:**
 
@@ -81,11 +93,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to get the last child directly.**
 - **Example:** `const lastChild = element.lastChild;`
 
+
 **14. `nextSibling`:**
 
 - **Accesses the next sibling node of an element.**
 - **Use it to navigate horizontally within the DOM.**
 - **Example:** `const nextSibling = element.nextSibling;`
+
 
 **15. `previousSibling`:**
 
@@ -93,11 +107,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to navigate horizontally in the opposite direction.**
 - **Example:** `const previousSibling = element.previousSibling;`
 
+
 **16. `nextElementSibling`:**
 
 - **Accesses the next sibling element node (skipping text and comment nodes).**
 - **Use it to specifically access sibling elements.**
 - **Example:** `const nextElementSibling = element.nextElementSibling;`
+
 
 **17. `previousElementSibling`:**
 
@@ -105,11 +121,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to specifically access sibling elements in the opposite direction.**
 - **Example:** `const previousElementSibling = element.previous
 
+
 **18. `document.documentElement`:**
 
 - **Accesses the document element (the root HTML element).**
 - **Use it to get the overall document or its properties.**
 - **Example:** `const docElement = document.documentElement;`
+
 
 **19. `document.head`:**
 
@@ -117,11 +135,13 @@ Here are 20 commonly used methods along with explanations of when to use each wi
 - **Use it to manipulate elements within the head, like scripts and styles.**
 - **Example:** `const headElement = document.head;`
 
+
 **20. `document.body`:**
 
 - **Accesses the body element of the document.**
 - **Use it to interact with and modify the main content of the page.**
 - **Example:** `const bodyElement = document.body;`
+
 
 **Extra:**
 
